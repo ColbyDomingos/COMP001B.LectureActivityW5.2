@@ -5,6 +5,13 @@ function buttonClick() {
 
 document.addEventListener("DOMContentLoaded", function() {
     let button = document.querySelector("button");
+    var link = document.getElementById("myLink");
+
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        console.log("Link clicked, but navigation prevented");
+    });
+
     if (button) {
         button.addEventListener("click", buttonClick);
     } else {
