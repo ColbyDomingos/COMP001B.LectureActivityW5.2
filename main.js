@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     link.addEventListener("click", function(event) {
         event.preventDefault();
         console.log("Link clicked, but navigation prevented");
+        alert("NO DISTRACTIONS! IM CODING!!");
     });
 
     if (button) {
@@ -18,3 +19,4 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("Button element not found");
     }
 });
+
